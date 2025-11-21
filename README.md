@@ -1,4 +1,4 @@
-# CSCI_166_Atari_DQN_Project
+# CSCI 166 Atari DQN Project
 Deep Q-Learning on Atari Pong: Baseline DQN and Double DQN
 
 This is the repo for our CSCI 166 project on Atari Pong with Deep Q Learning.
@@ -10,39 +10,39 @@ Folders in this repo:
 - DDQN/
 - Starter/
 
-Baseline
+Baseline  
 Plain DQN run.
 
-- Baseline/CSCI_166_Project_Pong_(Baseline_DQN).ipynb
-- Baseline/pong_dqn_returns.csv
-- Baseline/pong_dqn_curve.png
-- Baseline/pong_baseline_hparams.txt
-- Baseline/pong_baseline_early.mp4
-- Baseline/pong_baseline_learned.mp4
+- [Baseline/CSCI_166_Project_Pong_(Baseline_DQN).ipynb](Baseline/CSCI_166_Project_Pong_(Baseline_DQN).ipynb)
+- [Baseline/pong_dqn_returns.csv](Baseline/pong_dqn_returns.csv)
+- [Baseline/pong_dqn_curve.png](Baseline/pong_dqn_curve.png)
+- [Baseline/pong_baseline_hparams.txt](Baseline/pong_baseline_hparams.txt)
+- [Baseline/pong_baseline_early.mp4](Baseline/pong_baseline_early.mp4)
+- [Baseline/pong_baseline_learned.mp4](Baseline/pong_baseline_learned.mp4)
 
-DDQN
+DDQN  
 Same game with targets computed using Double DQN.
 
-- DDQN/CSCI_166_Project_Pong_(Double_DQN).ipynb
-- DDQN/pong_ddqn_returns.csv
-- DDQN/pong_ddqn_curve.png
-- DDQN/pong_ddqn_hparams.txt
-- DDQN/pong_ddqn_early.mp4
-- DDQN/pong_ddqn_learned.mp4
+- [DDQN/CSCI_166_Project_Pong_(Double_DQN).ipynb](DDQN/CSCI_166_Project_Pong_(Double_DQN).ipynb)
+- [DDQN/pong_ddqn_returns.csv](DDQN/pong_ddqn_returns.csv)
+- [DDQN/pong_ddqn_curve.png](DDQN/pong_ddqn_curve.png)
+- [DDQN/pong_ddqn_hparams.txt](DDQN/pong_ddqn_hparams.txt)
+- [DDQN/pong_ddqn_early.mp4](DDQN/pong_ddqn_early.mp4)
+- [DDQN/pong_ddqn_learned.mp4](DDQN/pong_ddqn_learned.mp4)
 
-Starter
+Starter  
 We produced the course from the original notebook from the class.
 
-- Starter/c166f25_02b_dqn_pong.ipynb
+- [Starter/c166f25_02b_dqn_pong.ipynb](Starter/c166f25_02b_dqn_pong.ipynb)
 
-Game: ALE/Pong-v5
+Game: `ALE/Pong-v5`
 
 Short notes so we remember what we used:
 
 - observations are the 4 stacked grayscale frames after preprocessing
 - frames are resized to 84 x 84 resulting in the shape of (4, 84, 84)
-- action space consists of 6 discrete actions from the ALE Pong environment
-Reward is +1 when we score, -1 if the opponent scores and 0 otherwise, so rewards are pretty sparse
+- action space consists of 6 discrete actions from the ALE Pong environment  
+  Reward is +1 when we score, -1 if the opponent scores and 0 otherwise, so rewards are pretty sparse
 
 Both runs have the same configuration:
 
@@ -60,14 +60,14 @@ Otherwise, they should converge the same as the original, except instead of a ma
 
 What we did:
 
-1. Open the provided Baseline/CSCI_166_Project_Pong_(Baseline_DQN).ipynb notebook on Google Colab (with the runtime type set to GPU) and run all of the cells in order.
-2. Open DDQN/CSCI_166_Project_Pong_(Double_DQN).ipynb, enable GPU runtime, and run all code cells sequentially.
+1. Open the provided [Baseline/CSCI_166_Project_Pong_(Baseline_DQN).ipynb](Baseline/CSCI_166_Project_Pong_(Baseline_DQN).ipynb) notebook on Google Colab (with the runtime type set to GPU) and run all of the cells in order.
+2. Open [DDQN/CSCI_166_Project_Pong_(Double_DQN).ipynb](DDQN/CSCI_166_Project_Pong_(Double_DQN).ipynb), enable GPU runtime, and run all code cells sequentially.
 
 Each notebook will:
 
 - install Atari and Gymnasium dependencies
 - build the Pong environment with preprocessing
 - train the agent
-- write the *_returns.csv file
-- save the *_curve.png learning curve
-- save the early and learned *.mp4 clips for that run
+- write the `*_returns.csv` file
+- save the `*_curve.png` learning curve
+- save the early and learned `*.mp4` clips for that run
